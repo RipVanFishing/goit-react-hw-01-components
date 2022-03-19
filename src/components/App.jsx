@@ -4,7 +4,6 @@ import { Stat } from 'components/Stat/Stat';
 import { Title } from './Title/Title';
 
 import user from 'components/Profile/user.json';
-import data from 'components/Stat/stat.json';
 
 export const App = () => {
   return (
