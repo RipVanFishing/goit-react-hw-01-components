@@ -1,17 +1,25 @@
+import css from 'components/Profile/Profile.module.css';
+import { Profile } from 'components/Profile/Profile';
+import { Stat } from 'components/Stat/Stat';
+import { Title } from './Title/Title';
+
+import user from 'components/Profile/user.json';
+import data from 'components/Stat/stat.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework template
+    <div className={css.container}>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+      <Title title="Upload Stats" />
+      <Stat />
     </div>
   );
 };
