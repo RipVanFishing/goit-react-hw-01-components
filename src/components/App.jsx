@@ -1,7 +1,6 @@
 import css from 'components/Profile/Profile.module.css';
 import { Profile } from 'components/Profile/Profile';
-import { Stat } from 'components/Stat/Stat';
-import { Title } from './Title/Title';
+import { Statistic } from './Statistic/Statistic';
 
 import user from 'components/Profile/user.json';
 
@@ -17,8 +16,7 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Title title="Upload Stats" />
-      <Stat />
+      <Statistic />
     </div>
   );
 };
