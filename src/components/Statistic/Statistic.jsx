@@ -4,9 +4,9 @@ import { StatiscticList } from './StatisticList';
 
 export const Statistic = () => {
   return (
-    <>
-      <Title />
+    <section className={css.statistic}>
+      <Title title="Upload stats" />
       <StatiscticList />
-    </>
+    </section>
   );
 };

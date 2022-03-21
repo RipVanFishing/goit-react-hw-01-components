@@ -4,7 +4,7 @@ import { StatisticItem } from './StatisticItem';
 
 export const StatiscticList = () => {
   return (
-    <ul>
+    <ul className={css.statList}>
       {data.map(dat => (
         <StatisticItem
           key={dat.id}
