@@ -1,7 +1,8 @@
 import css from 'components/Profile/Profile.module.css';
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from './Statistic/Statistic';
-
+import { FriendList } from './Friends/FriendList';
+import { Transaction } from './Transaction/Transaction';
 import user from 'components/Profile/user.json';
 
 export const App = () => {
@@ -17,6 +18,8 @@ export const App = () => {
         likes={user.stats.likes}
       />
       <Statistic />
+      <FriendList />
+      <Transaction />
     </div>
   );
 };
