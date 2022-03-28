@@ -4,7 +4,7 @@ export const TransactionBody = ({ type, amount, currency, idx }) => {
   return (
     <tr
       className={css.tableRow}
-      style={{ backgroundColor: idx % 2 === 0 ? 'blue' : 'grey' }}
+      style={{ backgroundColor: idx % 2 === 0 ? '#ffffff' : '#ecf1f4' }}
     >
       <td className={css.tableCell}>{Upper(type)}</td>
       <td className={css.tableCell}>{amount}</td>
